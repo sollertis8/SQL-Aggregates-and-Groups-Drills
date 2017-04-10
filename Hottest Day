@@ -1,0 +1,8 @@
+SELECT
+	Date,
+	City,
+	MAX(MaxTemperatureF) MaxTemperatureF
+FROM
+	stations, weather
+GROUP BY Date, City
+ORDER BY MaxTemperatureF DESC	

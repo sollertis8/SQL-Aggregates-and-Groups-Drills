@@ -1,0 +1,5 @@
+SELECT
+	trip_id,
+	MIN(cast(duration as int)) duration
+FROM
+	trips
